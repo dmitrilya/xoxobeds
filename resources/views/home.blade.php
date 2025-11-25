@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="py-12">
-        <div class="max-w-8xl mx-auto px-2 xs:px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[88rem] mx-auto px-2 xs:px-4 sm:px-6 md:px-10 lg:px-14">
             <div class="xl:grid grid-cols-5 gap-12">
                 <div class="flex flex-col col-span-2 justify-center mb-8 sm:mb-12 lg:mb-16">
                     <h1
@@ -10,6 +10,11 @@
                     <h3 class="sm:text-center xl:text-left xs:text-lg lg:text-xl text-gray-600 dark:text-gray-400">
                         {{ __('We create beds thought out to the smallest detail to make your dreams come true in comfort') }}
                     </h3>
+
+                    <a href="#feedback" class="mt-6 sm:mt-8 lg:mt-10 xl:mt-12 block mx-auto xl:ml-0 animate-bounce" x-data
+                        @click="event.preventDefault();document.querySelector($el.getAttribute('href')).scrollIntoView({behavior: 'smooth'});">
+                        <x-primary-button>{{ __('I want a bed') }}</x-primary-button>
+                    </a>
                 </div>
 
                 <div class="aspect-[calc(1680)/1117] overflow-hidden shadow-sm rounded-lg lg:rounded-xl col-span-3">
@@ -18,7 +23,7 @@
                         <div class="image-foreground-container">
                             <div class="image image-foreground aspect-[calc(1680)/1117]"></div>
                         </div>
-                        <input type="range" min="1" max="100" value="50" id="slider" name="slider"
+                        <input type="range" min="1" max="100" value="50" step="0.2" id="slider" name="slider"
                             class="slider" />
                     </div>
                 </div>
@@ -29,11 +34,11 @@
                     <div class="sm:grid grid-cols-3 gap-6 lg:gap-10 xl:gap-14 items-center">
                         <div class="order-2 col-span-2 mb-6 sm:mb-0">
                             <h3
-                                class="mb-8 text-lg sm:text-xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white">
+                                class="mb-4 sm:mb-8 text-lg sm:text-xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white">
                                 {{ __('Two-faced harmony') }}</h3>
 
-                            <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400">
-                                {{ __('A laconic bed in your interior is the epitome of tranquility. Strict lines, noble wood, impeccable geometry. During the day, it is an oasis of relaxation, a keeper of silence. But at the right moment, she will reveal her secret nature') }}
+                            <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400 max-w-xl">
+                                {{ __('A laconic bed in your interior is the epitome of tranquility. Strict lines, natural wood, impeccable geometry. During the day, it is an oasis of relaxation, a keeper of silence. But at the right moment, she will reveal her secret nature') }}
                             </p>
                         </div>
 
@@ -46,11 +51,11 @@
                     <div class="sm:grid grid-cols-3 gap-6 lg:gap-10 xl:gap-14 items-center">
                         <div class="col-span-2 mb-6 sm:mb-0 text-right">
                             <h3
-                                class="mb-8 text-lg sm:text-xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white">
+                                class="mb-4 sm:mb-8 text-lg sm:text-xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white">
                                 {{ __('The magic of transformation') }}</h3>
 
-                            <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400">
-                                {{ __('One movement and the fragment boards change position. They flip over, rearrange, and reveal hidden fasteners. Smooth metamorphosis: rings, fixation points, new lines appear. The bed transforms into a fantasy space — easily, without fuss, at your will') }}
+                            <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400 max-w-xl ml-auto">
+                                {{ __('One movement and the boards change position. They flip over, rearrange, and reveal hidden fasteners. Smooth metamorphosis: rings, fixation points, new lines appear. The bed transforms into a fantasy space - easily, without fuss, at your will') }}
                             </p>
                         </div>
 
@@ -63,11 +68,11 @@
                     <div class="sm:grid grid-cols-3 gap-6 lg:gap-10 xl:gap-14 items-center">
                         <div class="order-2 col-span-2 mb-6 sm:mb-0">
                             <h3
-                                class="mb-8 text-lg sm:text-xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white">
+                                class="mb-4 sm:mb-8 text-lg sm:text-xl lg:text-2xl tracking-tight font-bold text-gray-900 dark:text-white">
                                 {{ __('Your personal theater of desires') }}</h3>
 
-                            <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400">
-                                {{ __('Peace during the day. At night, there is a scene for a dialogue between two souls. The bed keeps secrets and responds to the whispers of desires. Natural materials, thoughtful design, reliability — everything for your freedom and confidence. The comfort of everyday life and the delight of transformation in one object, in your space') }}
+                            <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400 max-w-xl">
+                                {{ __('Peace during the day. At night, there is a scene for a dialogue between two souls. The bed keeps secrets and responds to the whispers of desires. Natural materials, thoughtful design, reliability - everything for your freedom and confidence. The comfort of everyday life and the delight of transformation in one object, in your space') }}
                             </p>
                         </div>
 
@@ -81,10 +86,10 @@
 
             <section class="mt-4 sm:mt-8">
                 <div class="py-8 mx-auto sm:py-16">
-                    <div class="max-w-screen-sm mb-8 lg:mb-16">
+                    <div class="max-w-screen-md mb-8 sm:mb-14 lg:mb-20">
                         <h2
                             class="mb-4 text-xl xs:text-2xl lg:text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
-                            {{ __('Why choose our bed?') }}</h2>
+                            {{ __('What will change in your life after purchasing our bed?') }}</h2>
                     </div>
                     <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                         <div>
@@ -97,10 +102,11 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                            <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate
-                                seamlessly with all the organization and hit your marketing goals every month with our
-                                marketing plan.</p>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">
+                                {{ __('Rapprochement') }}</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                {{ __('The bed will become a special place where you can explore the facets of intimacy together and discover unknown sides in each other') }}
+                            </p>
                         </div>
                         <div>
                             <div
@@ -112,10 +118,11 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                            <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate
-                                seamlessly with all the organization and hit your marketing goals every month with our
-                                marketing plan.</p>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">
+                                {{ __('The trust will be strengthened') }}</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                {{ __('Experiments will require an open dialogue about desires and boundaries — this will enhance mutual understanding and a sense of security') }}
+                            </p>
                         </div>
                         <div>
                             <div
@@ -127,10 +134,11 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                            <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate
-                                seamlessly with all the organization and hit your marketing goals every month with our
-                                marketing plan.</p>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">
+                                {{ __('Your intimate life will be enriched') }}</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                {{ __('A variety of scenarios will allow you to avoid routine, bring back the thrill and make each meeting unique') }}
+                            </p>
                         </div>
                         <div>
                             <div
@@ -142,10 +150,11 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                            <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate
-                                seamlessly with all the organization and hit your marketing goals every month with our
-                                marketing plan.</p>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">
+                                {{ __('Space for self-expression') }}</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                {{ __('You will have the opportunity to realize your innermost fantasies in a comfortable and safe environment without leaving your home') }}
+                            </p>
                         </div>
                         <div>
                             <div
@@ -157,10 +166,11 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                            <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate
-                                seamlessly with all the organization and hit your marketing goals every month with our
-                                marketing plan.</p>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">
+                                {{ __('Empathetic interaction') }}</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                {{ __("You will learn to feel each other better, read non-verbal signals, and respond to your partner's needs") }}
+                            </p>
                         </div>
                         <div>
                             <div
@@ -172,10 +182,11 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                            <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate
-                                seamlessly with all the organization and hit your marketing goals every month with our
-                                marketing plan.</p>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">
+                                {{ __('Exclusivity in the relationship') }}</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                {{ __('Having a private space for intimate practices will create a zone of privacy where only the two of you are important') }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -330,6 +341,10 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <x-feedback />
             </section>
         </div>
     </div>

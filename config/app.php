@@ -6,6 +6,8 @@ return [
 
     'contact_phone' => env('CONTACT_PHONE'),
 
+    'email' => env('EMAIL'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

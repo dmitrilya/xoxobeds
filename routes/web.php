@@ -26,4 +26,8 @@ Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
 
+Route::post('/feedback', function () {
+    return;
+})->name('feedback');
+
 require __DIR__.'/auth.php';

@@ -1,12 +1,13 @@
 <nav x-data="{ open: false }" class="bg-white dark:bg-black-900 border-b border-gray-100 dark:border-gray-700">
-    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[88rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('home') }}">
                         <div class="text-lg sm:text-xl lg:text-2xl font-black text-red-600 dark:text-red-700">
-                            {{ config('app.name') }}</div>
+                            {{ config('app.name') }}
+                        </div>
                     </a>
                 </div>
 
