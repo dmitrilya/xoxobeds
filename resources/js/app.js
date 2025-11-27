@@ -18,3 +18,9 @@ slider.addEventListener("input", (evt) => {
     foregroundImage.style.width = `${sliderRange}%`;
     slider.style.setProperty('--left', `${sliderRange}%`);
 });
+
+$(document).ready(function() {
+  $('.tilt').tilt({
+    maxTilt: 5
+  });
+});

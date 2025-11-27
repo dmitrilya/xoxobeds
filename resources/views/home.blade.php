@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="py-12">
-        <div class="max-w-[88rem] mx-auto px-2 xs:px-4 sm:px-6 md:px-10 lg:px-0">
+        <div class="max-w-[88rem] mx-auto px-2 xs:px-4 sm:px-6 md:px-10 lg:px-14">
             <div class="xl:grid grid-cols-5 gap-12">
                 <div class="flex flex-col col-span-2 justify-center mb-8 sm:mb-12 lg:mb-16">
                     <h1
@@ -42,7 +42,7 @@
                             </p>
                         </div>
 
-                        <div class="order-1 rounded-xl overflow-hidden w-1/2 mx-auto sm:w-full">
+                        <div class="tilt order-1 rounded-xl overflow-hidden w-1/2 mx-auto sm:w-full">
                             <img class="w-full" src="{{ asset('images/block1.jpg') }}"
                                 alt="{{ __('Two-faced harmony') }}">
                         </div>
@@ -59,7 +59,7 @@
                             </p>
                         </div>
 
-                        <div class="rounded-xl overflow-hidden w-1/2 mx-auto sm:w-full">
+                        <div class="tilt rounded-xl overflow-hidden w-1/2 mx-auto sm:w-full">
                             <img class="w-full" src="{{ asset('images/block2.jpg') }}"
                                 alt="{{ __('The magic of transformation') }}">
                         </div>
@@ -76,7 +76,7 @@
                             </p>
                         </div>
 
-                        <div class="order-1 rounded-xl overflow-hidden w-1/2 mx-auto sm:w-full">
+                        <div class="tilt order-1 rounded-xl overflow-hidden w-1/2 mx-auto sm:w-full">
                             <img class="w-full" src="{{ asset('images/block3.jpg') }}"
                                 alt="{{ __('Your personal theater of desires') }}">
                         </div>
