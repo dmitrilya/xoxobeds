@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="py-12">
-        <div class="max-w-[88rem] mx-auto px-2 xs:px-4 sm:px-6 md:px-10 lg:px-14">
+        <div class="max-w-[88rem] mx-auto px-2 xs:px-4 sm:px-6 md:px-10 lg:px-0">
             <div class="xl:grid grid-cols-5 gap-12">
                 <div class="flex flex-col col-span-2 justify-center mb-8 sm:mb-12 lg:mb-16">
                     <h1
